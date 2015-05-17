@@ -1,4 +1,4 @@
-package beans;
+package com.fai.beans;
 
 public class Report {
 	private int rigNum;

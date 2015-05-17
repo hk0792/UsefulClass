@@ -16,7 +16,7 @@
 	<servlet>
 		<display-name>ShowReport</display-name>
 		<servlet-name>ShowReport</servlet-name>
-		<servlet-class>servlet.ReportServlet</servlet-class>
+		<servlet-class>com.fai.servlet.ReportServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>ShowReport</servlet-name>

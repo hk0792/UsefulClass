@@ -1,4 +1,4 @@
-package service;
+package com.fai.service;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -7,8 +7,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import jdbc.JdbcConn;
-import beans.Report;
+import com.fai.beans.Report;
+import com.fai.jdbc.JdbcConn;
 
 public class Service {
 	private Connection conn;
