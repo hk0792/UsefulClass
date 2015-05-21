@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">"工程规范1"</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+    <string name="search">搜索</string>
+    <string name="action_1">选项1</string>
+    <string name="action_2">选项2</string>
+    <string name="action_3">选项3</string>
+    <string name="action_settings">设置</string>
+
+</resources>

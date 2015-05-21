@@ -6,8 +6,8 @@ import java.sql.DriverManager;
 public class JdbcConn {
 	public static Connection getConnection() {
 		String url = "jdbc:mysql://120.24.248.212:3306/fai_server";
-		String name = "root";
-		String password = "@&fai!@#@";
+		String name = "fai";
+		String password = "fai!@#";
 		Connection conn = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver").newInstance();

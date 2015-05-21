@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="navi_items">
+        <item>Top Level 1</item>        <item>Top Level 2</item>
+        <item>Top Level 3</item>
+        <item>Top Level 4</item>
+    </string-array>
+
+</resources>
