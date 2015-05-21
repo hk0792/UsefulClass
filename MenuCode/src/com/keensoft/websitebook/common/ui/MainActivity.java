@@ -33,6 +33,7 @@ public class MainActivity extends ActionBarActivity implements
 	private DrawerLayout mDrawerLayout;
 	private ActionBarDrawerToggle mDrawerToggle;
 	private ListView mDrawerList;
+	private View left;
 
 	private String[] mNaviItemText;
 	private CharSequence mTitle;
@@ -62,6 +63,7 @@ public class MainActivity extends ActionBarActivity implements
 		mNaviItemText = getResources().getStringArray(R.array.navi_items);
 		mDrawerTitle = getResources().getString(R.string.app_name);
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+		left = findViewById(R.id.id_left_menu);
 		mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow,
 				GravityCompat.START);
 
@@ -126,7 +128,7 @@ public class MainActivity extends ActionBarActivity implements
 
 		mDrawerList.setItemChecked(position, true);
 		setTitle(mNaviItemText[position]);
-		mDrawerLayout.closeDrawer(mDrawerList);
+		mDrawerLayout.closeDrawer(left);
 	}
 
 	@Override
