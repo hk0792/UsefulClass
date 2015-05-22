@@ -28,7 +28,7 @@
             android:value="Channel ID" />
 
         <activity
-            android:name="com.keensoft.websitebook.common.ui.MainActivity"
+            android:name="com.keensoft.websitebook.ui.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

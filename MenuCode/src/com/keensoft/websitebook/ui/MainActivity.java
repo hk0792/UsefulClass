@@ -1,4 +1,4 @@
-package com.keensoft.websitebook.common.ui;
+package com.keensoft.websitebook.ui;
 
 import java.util.List;
 
@@ -26,6 +26,7 @@ import com.keensoft.websitebook.beans.FolderItem;
 import com.keensoft.websitebook.db.FaiCodeDatabase;
 import com.keensoft.websitebook.fragment.MainListFragment;
 import com.keensoft.websitebook.fragment.MainListFragment.OnSelectedListener;
+import com.umeng.analytics.MobclickAgent;
 import com.umeng.update.UmengUpdateAgent;
 
 public class MainActivity extends ActionBarActivity implements
@@ -51,6 +52,16 @@ public class MainActivity extends ActionBarActivity implements
 		initDrawerLayout();
 		selectNaviItem(0);
 		UmengUpdateAgent.update(this);
+	}
+
+	public void onResume() {
+		super.onResume();
+		MobclickAgent.onResume(this);
+	}
+
+	public void onPause() {
+		super.onPause();
+		MobclickAgent.onPause(this);
 	}
 
 	@Override
