@@ -26,6 +26,7 @@ import com.keensoft.websitebook.beans.FolderItem;
 import com.keensoft.websitebook.db.FaiCodeDatabase;
 import com.keensoft.websitebook.fragment.MainListFragment;
 import com.keensoft.websitebook.fragment.MainListFragment.OnSelectedListener;
+import com.umeng.update.UmengUpdateAgent;
 
 public class MainActivity extends ActionBarActivity implements
 		OnSelectedListener {
@@ -49,6 +50,7 @@ public class MainActivity extends ActionBarActivity implements
 
 		initDrawerLayout();
 		selectNaviItem(0);
+		UmengUpdateAgent.update(this);
 	}
 
 	@Override
